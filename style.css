@@ -3,3 +3,63 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    background-color: lightgrey;
+}
+
+.site-branding {
+    font-weight: bold;
+}
+
+main {
+    background-color: rgb(55, 54, 54);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h1 {
+    padding: 50px;
+    text-align: center;
+    font-size: 45px;
+    color: whitesmoke;
+}
+
+#biotext {
+    padding: 20px;
+    padding-left: 750px;
+    padding-right: 100px;
+    text-align: justify;
+    text-indent: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+p {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+#greeting {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+footer {
+    padding: 25px;
+    background-color: black;
+}
+
+#footertext {
+    font-size: 20px;
+}
