@@ -9,6 +9,18 @@
   box-sizing: border-box;
 }
 
+.site-branding {
+    display: flex;
+    justify-content: left;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
 /* =========== navigation start ============= */
 nav {
     height: 100px;
@@ -25,7 +37,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: whitesmoke;
     text-decoration: none;
     font-size: 25px;
     padding: 10px;
