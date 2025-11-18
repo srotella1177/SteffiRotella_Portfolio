@@ -1,6 +1,9 @@
 :root {
-    --color-primary: rgb(149, 53, 53);
-
+    --color-primary-1: #1A1A1A;
+    --color-primary-2: #EAEAEA;
+    --color-secondary-1: #423A3A;
+    --color-secondary-2: #696969;
+    --color-accent: #7C2222;
 }
 
 * {
@@ -9,48 +12,55 @@
   box-sizing: border-box;
 }
 
+/* =========== navigation start ============= */
+
 .site-branding {
     display: flex;
     justify-content: left;
-    color: whitesmoke;
-    text-decoration: none;
+    align-items: center;
+    color: var(--color-primary-2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
     padding: 10px;
     font-size: 25px;
-    height: 100px;
+    height: 50px;
     width: 100%;
-    background-color: black;
+    background-color: var(--color-primary-1);
 }
 
-/* =========== navigation start ============= */
 nav {
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: var(--color-primary-1);
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100%;
 }
 
 nav a {
-    color: whitesmoke;
+    color: var(--color-primary-2);
     text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
     font-size: 25px;
     padding: 10px;
+    margin-right: 50px;
 }
 
 nav a:hover {
-    color:red
+    color: var(--color-accent);
+    
 }
 
 /* =========== navigation end ============= */
 
 main {
-    background-color: rgb(55, 54, 54);
+    background-color: var(--color-secondary-1);
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -61,7 +71,15 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 45px;
     text-transform: uppercase;
-    color: whitesmoke;
+    color: var(--color-primary-2);
+}
+
+h3{
+    padding: 50px;
+    text-align: center;
+    color: var(--color-primary-2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
 }
 
 #biotext {
@@ -73,7 +91,7 @@ h1 {
     text-indent: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    color: whitesmoke;
+    color: var(--color-primary-2);
 }
 
 p {
@@ -81,7 +99,7 @@ p {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
-    color: whitesmoke;
+    color: var(--color-primary-2);
 }
 
 #greeting {
@@ -89,14 +107,19 @@ p {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
-    color: whitesmoke;
+    color: var(--color-primary-2);
 }
+
+/* =========== footer start ============= */
 
 footer {
     padding: 25px;
-    background-color: black;
+    background-color: var(--color-primary-1);
 }
 
 #footertext {
     font-size: 20px;
+    color: var(--color-primary-2);
 }
+
+/* =========== footer end ============= */
