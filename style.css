@@ -15,7 +15,7 @@
 /* =========== headers start ============= */
 
 .homeheader {
-    background-image: url(assets/images/homebanner.jpg);
+    background-image: url(/assets/images/homebanner.jpg);
     background-size: cover;
     background-position: bottom;
     height: 400px;
@@ -24,7 +24,7 @@
 }
 
 .portfoliobanner {
-    background-image: url(assets/images/portfoliobanner.jpg);
+    background-image: url(/assets/images/portfoliobanner.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -33,7 +33,7 @@
 }
 
 .biobanner {
-    background-image: url(assets/images/biobanner.png);
+    background-image: url(/assets/images/biobanner.png);
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -42,7 +42,7 @@
 }
 
 .contactbanner {
-    background-image: url(assets/images/contactbanner.jpg);
+    background-image: url(/assets/images/contactbanner.jpg);
     background-size: cover;
     background-position: bottom;
     height: 400px;
