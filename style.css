@@ -155,7 +155,7 @@ div.biopagelayout {
 }
 
 div.inkexamples {
-    background-image: url(assets/images/inkbanner.PNG);
+    background-image: url(/assets/images/inkbanner.PNG);
     background-size: cover;
     background-position: center;
     height: 550px;
