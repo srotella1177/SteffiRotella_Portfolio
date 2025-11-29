@@ -112,7 +112,14 @@ ul li {
     line-height: 50px;
 }
 
-.Buttons {
+.buttoncontainer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-width: 5px;
+}
+
+.buttons {
     list-style: none;
     width: 250px;
     height: auto;
@@ -142,7 +149,13 @@ a:active {
 /* =========== pictures start ============= */
 
 div.biopagelayout {
-    display: inline;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+
 }
 
 .artist {
@@ -151,7 +164,6 @@ div.biopagelayout {
     border: 10px solid var(--color-accent);
     border-radius: 550px;
     margin-left: 100px;
-    vertical-align: text-top;
 }
 
 div.inkexamples {
@@ -200,18 +212,6 @@ h3{
     font-size: 25px;
 }
 
-#biotext {
-    padding: 20px;
-    padding-left: 750px;
-    padding-right: 100px;
-    line-height: 1.5;
-    text-align: left;
-    text-indent: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color: var(--color-primary-2);
-}
-
 p {
     padding: 50px;
     text-align: center;
@@ -224,15 +224,22 @@ p {
 
 /* =========== portfolio start ============= */
 
+.gallery {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
 .galleryimage {
     display: inline-table;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     overflow: hidden;
     object-fit: cover;
     border-radius: 50px;
     padding: 20px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 50px;
 }
 
