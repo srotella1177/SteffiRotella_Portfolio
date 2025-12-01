@@ -50,6 +50,11 @@
     margin-bottom: 10px;
 }
 
+.centered-header {
+    text-align: center;
+    padding: 150px;
+}
+
 /* =========== headers end ============= */
 
 /* =========== navigation start ============= */
@@ -117,6 +122,9 @@ ul li {
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     column-width: 5px;
+    padding-left: 730px;
+    padding-bottom: 50px;
+    list-style-type: none;
 }
 
 .buttons {
@@ -229,6 +237,7 @@ p {
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
+    
 }
 
 .galleryimage {
