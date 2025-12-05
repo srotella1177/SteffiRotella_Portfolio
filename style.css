@@ -119,6 +119,19 @@ nav a:active {
     transition: 5ms;
 }
 
+@media (max-width: 920px) {
+    nav a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 740px) {
+    nav a {
+        font-size: 20px;
+        margin-right: 25px;
+    }
+}
+
 /* =========== navigation end ============= */
 
 /* =========== links start ============= */
