@@ -55,6 +55,18 @@
     padding: 150px;
 }
 
+@media (max-width: 920px) {
+    .centered-header {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 740px) {
+    .centered-header {
+        font-size: 40px;
+    }
+}
+
 /* =========== headers end ============= */
 
 /* =========== navigation start ============= */
@@ -117,24 +129,78 @@ ul li {
     line-height: 50px;
 }
 
-.buttoncontainer {
-    display: flex;
-    align-items: center;
-    color: var(--color-secondary-1);
-    grid-template-columns: 1fr 1fr 1fr;
-    column-width: 5px;
-    padding-left: 730px;
-    padding-bottom: 50px;
-    list-style-type: none;
+.button1 {
+    background-color: var(--color-primary-1);
+    border: none;
+    color: var(--color-primary-2);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-primary-1);
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    justify-content: center;
+    width: 33%
 }
 
-.buttons {
-    list-style: none;
-    width: 250px;
-    height: auto;
+.button2 {
     background-color: var(--color-primary-1);
-    border-radius: 25px;
+    border: none;
+    color: var(--color-primary-2);
+    padding: 15px 55px;
     text-align: center;
+    text-decoration: none;
+    color: var(--color-primary-1);
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 33%;
+}
+
+.button3 {
+    background-color: var(--color-primary-1);
+    border: none;
+    color: var(--color-primary-2);
+    padding: 15px 65px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-primary-1);
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 33%;
+}
+
+@media (max-width: 920px) {
+    .button1 {
+        padding: 10px 30px;
+    }
+    .button2 {
+        padding: 10px 30px;
+    }
+    .button3 {
+        padding: 10px 30px;
+    }
+    ul li {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 740px) {
+    .button1 {
+        padding: 5px 15px;
+    }
+    .button2 {
+        padding: 5px 15px;
+    }
+    .button3 {
+        padding: 5px 15px;
+    }
+    ul li {
+        font-size: 15px;
+    }
 }
 
 a {
@@ -153,27 +219,42 @@ a:active {
     transition: 5ms;
 }
 
+@media (max-width: 920px) {
+    .buttons {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 740px) {
+    .buttons {
+        width: 150px;
+        height: auto;
+    }
+}
+
 /* =========== links end ============= */
 
 /* =========== pictures start ============= */
 
-div.biopagelayout {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2px;
-    padding-right: 50px;
-    padding-bottom: 100px;
+div.image {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
 
+div.biotext {
+    font-size: 30px;
+    padding: 25px 75px;
 }
 
 .artist {
-    width: 500px;
+    width: 450px;
     height: auto;
     border: 10px solid var(--color-accent);
     border-radius: 550px;
-    margin-left: 100px;
 }
+
 
 div.inkexamples {
     background-image: url(/assets/images/inkbanner.PNG);
@@ -234,28 +315,66 @@ p {
 /* =========== portfolio start ============= */
 
 .gallery {
-    display: inline-flexbox;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
 .galleryimage {
-    display: inline-table;
+    margin: 50px;
     width: 450px;
     height: 450px;
     overflow: hidden;
     object-fit: cover;
     border-radius: 50px;
-    padding: 20px;
-    margin-left: 50px;
-    margin-bottom: 50px;
 }
 
 .galleryimage:hover {
     opacity: 50%;
     transition: 5ms;
+}
+
+@media (max-width: 740px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: var(--color-primary-1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: var(--color-primary-2);
+    text-decoration: none;
 }
 
 /* =========== portfolio end ============= */
@@ -281,6 +400,7 @@ div.ghosticondiv {
     padding: 25px;
     margin-top: 50px;
     text-align: center;
+    justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 45px;
     color: var(--color-primary-2);
