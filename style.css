@@ -15,44 +15,32 @@
 /* =========== headers start ============= */
 
 .homeheader {
-    background-image: url(assets/images/homebanner.jpg);
-    background-size: cover;
-    background-position: bottom;
-    height: 400px;
+    background-image: linear-gradient(to bottom, var(--color-accent), var(--color-secondary-1));
+    height: 200px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .portfoliobanner {
-    background-image: url(assets/images/portfoliobanner.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+    background-image: linear-gradient(to bottom, var(--color-accent), var(--color-secondary-1));
+    height: 200px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .biobanner {
-    background-image: url(assets/images/biobanner.png);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+    background-image: linear-gradient(to bottom, var(--color-accent), var(--color-secondary-1));
+    height: 200px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .contactbanner {
-    background-image: url(assets/images/contactbanner.jpg);
-    background-size: cover;
-    background-position: bottom;
-    height: 400px;
+    background-image: linear-gradient(to bottom, var(--color-accent), var(--color-secondary-1));
+    height: 200px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .centered-header {
     text-align: center;
-    padding: 150px;
+    padding: 50px;
 }
 
 @media (max-width: 920px) {
@@ -153,7 +141,8 @@ ul li {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     justify-content: center;
     width: 33%
 }
@@ -259,6 +248,7 @@ div.image {
 div.biotext {
     font-size: 30px;
     padding: 25px 75px;
+    margin-bottom: 75px;
 }
 
 .artist {
